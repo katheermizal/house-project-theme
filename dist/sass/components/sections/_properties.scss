@@ -1,0 +1,211 @@
+
+
+.properties {
+    overflow: hidden;
+    background: #f7f7f7;
+    border-top: 1px solid #d5d9dd;
+    padding-bottom: 3rem;
+
+    .title-row {
+        margin-bottom: 30px;
+
+        p {
+            color: #000;
+            opacity: 1;
+            font-size: 24px;
+            line-height: 36px;
+            margin: 0;
+        }
+    }
+
+    .view-more  .btn {
+        color: $white;
+        background: #999;
+        border-color: #999;
+        font: 400 14.21px/17px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 14px 20px;
+        margin-top: 24px;
+
+        &:hover,
+        &:focus {
+            background: #181818;
+            border-color:#181818;
+        }
+    }
+}
+
+.properties {
+    h2 {
+        color: #000; 
+    }
+
+    .line {
+        margin: 0 auto 28px;
+    }
+
+    .card-property {
+        border: 0;
+        margin-bottom: 30px;
+    }
+}
+
+.card-property { 
+    a {
+        text-decoration: none !important; 
+    }
+    .card-img-top {
+        border-top-right-radius: 5px; 
+        border-top-left-radius: 5px;
+        min-width: 100%
+    }
+
+    .card-image-wrapper,
+    .card-title {
+        transition: 0.3s ease all;
+        -webkit-transition: 0.3s ease all; 
+    }
+
+    p.city { 
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: .5px;
+
+        .value {
+            float: right;
+            font-weight: 500;
+            color: #03b5c3;
+            font-size: 14px;        
+        } 
+    }
+
+    .card-title {
+        color: #0f4555;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 2px;
+    }
+    
+
+    .card-specs {
+        height: 70px;
+        border-top: 1px solid #f6f8fa;
+        text-align: center
+    }
+
+    .card-specs > div {
+        width: 33.3333%; 
+        float: left;
+        height: inherit
+    }
+
+    .card-specs >div .property {
+        text-transform: uppercase;
+        color: #9b9da0;
+        font: 12px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        letter-spacing: .5px;
+        margin-top: 18px
+    }
+
+    .card-specs>div .value {
+        color: #03b5c3;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 32px;
+
+        svg {
+            height: 12px;
+            fill: #b7b7b7;
+        }
+    }
+
+    .card-specs .metres,
+    .card-specs .rooms {
+        border-right: 1px solid #f6f8fa
+    }
+}
+
+
+@media (min-width: 1200px) {
+    section.properties {
+        padding-bottom: 6em;
+    }
+
+    .card-property {    
+        .card-image-wrapper {
+            opacity: 1;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .card-title {
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+}
+
+@media(max-width: 767px){
+    .properties .view-more .btn {
+        margin-top: 0;
+    }
+}
+
+
+/*** Tab Navigation ***/
+
+.properties {
+    .tab-tiggers {
+        font-size: 0;
+        margin: 0 0 25px;
+        text-align: center;
+
+        span {
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #000;
+            display: inline-block;
+            padding: 5px;
+            border: 1px solid #eee;
+            padding: 7px 15px 7px;
+            min-width: 112px;
+            cursor: pointer;
+
+            &.active {
+                background-color: #ccc;
+                color: #fff; 
+            }
+        }
+    }
+}
+
+
+@media(min-width: 1200px) {
+    .properties {
+        .tab-tiggers {
+            span {
+                &:hover {
+                    background-color: #ccc;
+                    color: #fff; 
+                }
+            }
+        }
+    } 
+}
+
+
+@media(max-width: 576px){
+    .properties {
+        .tab-tiggers {
+            span {
+                width: 50%;
+            }
+        }
+    } 
+}

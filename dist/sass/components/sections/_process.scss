@@ -1,0 +1,81 @@
+.process {
+    background: $white;
+
+    p {
+        color: #000;
+        opacity: 1;
+        font-size: 24px;
+        line-height: 36px;
+        margin-top: 1.2em;
+        margin-bottom: 2rem
+    }
+
+    .line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+
+@media (min-width: 768px) {
+    .process p {
+        margin-bottom: 40px;
+    }
+}
+
+.process {
+    text-align: center;
+
+    h2 {
+        color: #000;
+    }
+
+    h3 {
+        color: #0f4555;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .steps {
+        text-align: left;
+
+        > div {
+            margin-bottom: 30px;
+        }
+    }
+
+    .steps p {
+        font-size: 1em; 
+    }
+    
+}
+
+
+@media (min-width: 768px) {
+    .process {
+        .steps p { 
+            color: #000;
+            opacity: 1;
+            margin-top: 0;
+            margin-bottom: 0
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    section.process {
+        padding-bottom: calc(6em - 40px);
+    }
+}
+
+@media(max-width: 767px){
+    section.process {
+        padding-bottom: 1rem;
+    }
+
+    .process .steps > div {
+        margin-bottom: 0;
+    }
+}

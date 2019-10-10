@@ -1,0 +1,110 @@
+
+.content-post article {
+    h1 {
+        text-transform: none;
+        color: #0d253e;
+        font: 400 32px/45px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif
+    }
+
+    h1,
+    h3,
+    h2 {
+        text-transform: none;
+        color: #0f4555;
+        font-weight: 500;
+    }
+
+    h3,
+    h2 {
+        font-size: 20px;
+    }
+
+    p,
+    li {
+        color: #000;
+    }
+
+    a {
+        color: $bColor;
+
+        &:hover,
+        &:focus {
+            color: #000;
+            text-decoration: none; 
+        }
+    }
+}
+
+.content-post article hr {
+    width: 100%;
+    color: rgba(0,0,0,.1)
+}
+
+.content-post article .avatar {
+    float: left;
+    clear: both;
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+
+.content-post article .autograph {
+    margin-top: 59px;
+    margin-bottom: 62px;
+    float: left;
+    clear: both
+}
+
+.content-post article .author {
+    float: left;
+    clear: both;
+    font-weight: 600;
+    color: #777;
+    padding-left: 7px;
+}
+
+.content-post .goback-link {
+    font-size: 16px;
+    letter-spacing: 1px; 
+    color: $bColor;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    display: inline-block;
+
+    span {
+        font-size: 19px;
+        margin-right: 3px;
+        font-weight: 700;
+        display: inline-block;
+    }
+
+    &:hover {
+        color: #000;
+        text-decoration: none; 
+    }
+}
+
+@media(min-width: 7680px){
+    .content-post .goback-link {
+        margin-bottom: 20px;
+    }
+}
+
+@media(min-width: 1200px){
+    section.content-post  {
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
+    }
+}
+
+@media(max-width: 767px){
+    .content-post article {
+        h1 {
+            font: 400 24px/30px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif
+        }
+    
+        h3,
+        h2 {
+            font-size: 18px;
+        }
+    }    
+}

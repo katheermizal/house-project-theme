@@ -1,0 +1,158 @@
+
+.footer {
+    font-size: 14px;
+    color: #000;
+    line-height: 2em;
+    margin-bottom: 10px;
+    padding-top: 1rem;
+
+
+    h3 {
+        color: #000;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 20px
+    }
+
+    .container {
+        background-image: url(../images/footer-pattern.png);
+        background-position:  right center;
+        background-repeat: no-repeat; 
+        background-size: auto 80%;
+    }
+
+    .bottom-row {
+        background: #efefef;
+
+        .container {
+            background-image : none !important;
+        }
+    }
+
+    .top-row {
+        margin-bottom: 1.7rem;
+    }
+
+    .footer-details {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .footer {
+        padding-top: 4rem;
+        margin-bottom: 0
+    }
+}
+
+
+.footer a,
+.footer p {
+    color: #54595f;
+    text-decoration: none;
+}
+
+.footer-logo img {
+    margin-bottom: 20px
+}
+
+.footer a:hover,
+.footer a:focus {
+    color: $bColor;
+    text-decoration: none;
+}
+
+.footer .row-articles {
+    margin-bottom: 33px
+}
+
+.footer .col-footer-image {
+    min-height: 201px;
+    background-size: contain
+}
+
+.footer .links-to-articles {
+    margin-bottom: 5rem
+}
+
+.footer .links-to-articles a,
+.footer .footer-details p  {
+    display: block;
+    line-height: 33px;
+    font-size: 16px
+}
+
+.footer p.copyright {
+    font-size: 14px;
+    color: #9b9da0;
+    line-height: 4rem;
+    margin-bottom: 0;
+}
+
+.footer .col-social {
+    margin-top: 16px;
+    a {
+        margin-left: 10px;
+    }
+}
+
+.footer .col-links,
+.footer .col-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify; 
+    justify-content: space-between
+}
+
+.footer .col-links img:hover,
+.footer .col-social img:hover {
+    opacity: .6
+}
+
+
+@media(min-width: 1200px){
+    .footer .footer-details p {
+        padding-right: 20px;
+    }
+}
+
+
+@media(max-width: 767px){
+    .footer {
+        padding-top: 2.5rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+
+        .top-row {
+            margin-bottom: 1em;
+        }
+
+        .footer-details {
+            text-align: center;
+        }
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        .links-to-articles {
+            margin-bottom: 1.5rem;
+        }
+
+        .container {
+            background-position: right bottom;
+            background-size: auto;
+        }
+
+        p.copyright {
+            text-align: center;
+        }
+
+        .col-social {
+            margin-bottom: 16px;
+        }
+    }
+}

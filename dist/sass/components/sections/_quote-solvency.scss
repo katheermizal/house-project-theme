@@ -1,0 +1,140 @@
+
+.quote {
+    padding-top: 112px;
+    padding-bottom: 107px;
+    background: #4aadb5;
+    color: $white;
+    position: relative;
+    background-attachment: fixed !important;
+
+    &:before {
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute; 
+        background-color: #25527f;
+        opacity: 0.6;
+        z-index: 1;
+    }
+
+    .container {
+        z-index: 2;
+        position: relative;
+    }
+
+    
+    blockquote {
+        border-left: none;
+        quotes: "\201C" "\201D";
+        font-size: 1.2rem
+    }
+}
+
+@media (min-width: 768px) {
+    .quote blockquote {
+        font-size:1.3rem
+    }
+}
+
+@media (min-width: 992px) {
+    .quote blockquote {
+        font-size:1.4rem
+    }
+}
+
+@media (min-width: 1200px) {
+    .quote blockquote {
+        font-size:1.7rem
+    }
+}
+
+.quote {
+    blockquote h3:before {
+        content: "\201C";
+        content: open-quote
+    }
+
+    blockquote h3:after {
+        content: "\201D";
+        content: close-quote
+    }
+
+    blockquote h3 {
+        margin-bottom: 1.3em
+    }
+
+    blockquote .blockquote-footer,
+    blockquote p {
+        color: $white;
+        line-height: 1.3em;
+        text-shadow: 0 1px 6px rgba(0,0,0,.3)
+    }
+
+    .blockquote-footer {
+        margin-top: 1.3em
+    }
+
+    blockquote .blockquote-footer:before {
+        content: ""
+    }
+
+    blockquote cite {
+        font-style: normal
+    }
+}
+
+@media (min-width: 768px) {
+    .quote { 
+        background-color:#4aadb5 ;
+
+        blockquote {
+            margin: 0;
+            padding: 0;
+            quotes: "\201C" "\201D"
+        }
+
+        blockquote h3:before {
+            content: "\201C";
+            content: open-quote
+        }
+    
+        blockquote h3:after {
+            content: "\201D";
+            content: close-quote
+        }
+    
+        blockquote h3 {
+            margin-bottom: 1.3em
+        }
+    
+        blockquote .blockquote-footer,
+        blockquote p {
+            line-height: 1.3em;
+            font-weight: 400;
+            font-family: San Francisco,Helvetica,sans-serif;
+            text-shadow: 0 1px 6px rgba(0,0,0,.3)
+        }
+    
+        blockquote p {
+            margin-bottom: 0
+        }
+    } 
+}
+
+
+.quote { 
+    h3,
+    p {
+        color: $white;
+        text-shadow: 0 1px 6px rgba(0,0,0,.3)
+    }
+}
+
+
+@media(max-width: 767px){
+    section.quote {
+        padding: 3rem 0;
+    }
+}

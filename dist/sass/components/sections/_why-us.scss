@@ -1,0 +1,40 @@
+.why-us {
+    background: #0f4555;
+    color: $white; 
+    text-align: center; 
+
+    h2 { 
+        color: #fff; 
+    }
+
+    .line { 
+        margin: 0 auto;
+        width: 38px;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 20px;
+        color: #ddd;
+        margin: 0 0 20px; 
+    }
+
+    p {
+        color: #fff;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: .23px;
+        margin-bottom: 0; 
+    }
+
+    .img-pad {
+        margin: 40px auto 30px;
+    }
+}
+
+
+@media(max-width: 767px){
+    section.why-us {
+        padding-bottom: 3em;
+    }
+}

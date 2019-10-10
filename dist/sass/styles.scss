@@ -1,0 +1,38 @@
+@import './var',
+        './font-face';
+
+@import 'vendors/boostrap',
+        'vendors/font-awsome',
+        'vendors/animate',
+        'vendors/slick',
+        'vendors/slick-theme', 
+        'vendors/slick-light-box';
+
+@import './overites',
+        './common';
+
+@import 'layout/header',
+        'layout/footer';
+
+@import 'components/blocks/blog-post',
+        'components/blocks/property',
+        'components/blocks/upload-images-popup',
+        'components/blocks/popups'; 
+
+@import 'components/sections/main-banner',
+        'components/sections/inner-banner',
+        'components/sections/process',
+        'components/sections/properties',
+        'components/sections/testimonials',
+        'components/sections/why-us',
+        'components/sections/quote-solvency',
+        'components/sections/qna',
+        'components/sections/content-details',
+        'components/sections/filter-bar',
+        'components/sections/contact',
+        'components/sections/request-form-bar';   
+
+@import 'pages/blog',
+        'pages/post',
+        'pages/contact',
+        'pages/detail-page'; 

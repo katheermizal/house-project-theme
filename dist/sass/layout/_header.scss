@@ -1,0 +1,214 @@
+header {
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.2);
+ 
+    .navbar {
+        padding: 0 0 0 2rem;
+    }
+
+    .navbar.navbar-dark .navbar-toggler {
+        border-color: hsla(0,0%,100%,.1)
+    }
+
+    .navbar .logo {
+        display: block
+    }
+    .navbar-dark .navbar-nav .nav-link,
+    .navbar .nav-link {
+        color: #54595f; 
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.75rem;
+        letter-spacing: 1px; 
+        padding-top: 2em;
+        padding-bottom: 2em;     
+        position: relative;
+
+        &:before {
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            height: 0;
+            display: block;
+            background: $bColor;
+            transition: 0.3s ease all;
+        }
+
+        &.active,
+        &:hover,
+        &:focus { 
+            color: $bColor; 
+            &:before {
+                height: 5px; 
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    header {    
+        .navbar {
+            background:transparent;
+            -webkit-transition: background 1.5s linear;
+            transition: background 1.5s linear
+        }
+
+        .navbar .nav-link {
+            line-height: 75px;
+            -webkit-transition: line-height .5s linear;
+            transition: line-height .5s linear
+        }
+
+        .navbar .nav-item {
+            padding-right: 1rem;
+            margin-left: 1rem
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    header .navbar .nav-item {
+        padding-right:2rem;
+        margin-left: 2rem
+    }
+}
+
+@media (max-width: 720px) {
+    header {
+        .navbar-toggleable-xs .navbar-nav {
+            clear:left
+        }
+
+        .navbar-brand {
+            float: none
+        }
+
+        .nav-link {
+            text-transform: uppercase;
+            line-height: 75px;
+            font-size: 12px
+        }
+    }
+}
+
+header {
+    .navbar-brand {
+        color: $white;
+        font-family: Avenir Next,Helvetica,sans-serif;
+        font-weight: 900;
+        padding-top: .25rem;
+        padding-bottom: .25rem
+    }
+
+    .navbar-brand img,
+    .navbar-brand svg {
+        margin-top: .3em;
+        height: 27px
+    }
+
+    .nav-overlay {
+        display: none; 
+    }
+}
+
+@media (min-width: 768px) {
+    header {    
+        .navbar-brand {
+            font-size:45px
+        }
+
+        .navbar-brand img,
+        .navbar-brand svg {
+            margin-top: 0;
+            margin-left: 0; 
+            height: auto;
+            max-height: 100%; 
+        }
+    } 
+}
+
+@media (min-width: 0) and (max-width:1200px) {
+    header.navUnderHeader .navbar.fixed-top {
+        top: 20px
+    }
+}
+
+@media(max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        height: 50px;
+        overflow: visible;
+
+        .navbar {
+            padding: 0;
+        }
+
+        .nav-overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 20;
+            background: rgba(0,0,0,0.6);
+
+            &.active {
+                display: block; 
+            }
+        }
+
+        .navbar.navbar-dark .navbar-toggler {
+            border-color: rgb(3, 181, 195);
+                background: rgb(3, 181, 195);  
+            padding: .25rem;
+            margin-top: 5px;
+
+            &.active { 
+                border-color: #000000; 
+                background: #000000;
+            }
+        }
+
+        .navbar-collapse {
+            height: 100% !important;
+            overflow-y: auto;
+            background-color: #fff;
+            position: fixed;
+            left: -240px;
+            right: auto;
+            top: 0;
+            bottom: 0;
+            padding: 20px 30px;
+            border-top: 1px solid #eee;
+            width: 240px;
+            z-index: 21;
+            display: block !important;
+            transition: 0.3s ease all;
+           -webkit-transition: 0.3s ease all; 
+
+            &.active { 
+                left: 0;
+            }
+        }
+
+        .navbar-dark .navbar-nav .nav-link, 
+        .navbar .nav-link {
+            padding-bottom: 1em;
+            position: relative;
+            padding-top: 1em;
+
+            &:after,
+            &:before {
+                display: none; 
+            }
+        }
+    }
+}

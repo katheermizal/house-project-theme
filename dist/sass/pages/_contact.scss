@@ -1,0 +1,188 @@
+.contact-us {
+    background: #f7f7f7;
+    border-top: 1px solid #d5d9dd;
+
+    .form-control {
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+
+    .action-row {
+        margin-top: 20px;
+    }
+
+    input::-webkit-input-placeholder {
+        color: #949494;
+        font: 400 14px/24.88px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        opacity: 1;
+        text-align: left
+    }
+    
+    input:-moz-placeholder,
+    input::-moz-placeholder {
+        color: #949494;
+        font: 400 14px/24.88px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        opacity: 1;
+        text-align: left
+    }
+    
+    input:-ms-input-placeholder {
+        color: #949494;
+        font: 400 14px/24.88px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        opacity: 1;
+        text-align: left
+    }
+    
+     h1 {
+        color: #0f4555;
+        font: 400 20px/24.88px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        letter-spacing: .62px;
+        text-transform: none;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+    }
+
+    
+    form label {
+        color: #2c2c2c;
+        font: 400 16px/18px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        letter-spacing: .04px
+    }
+    
+    form .tiny {
+        color: #949494;
+        font: 400 12px/24.88px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        letter-spacing: .1px
+    }
+    
+    form .btn-primary {
+        background: #999;
+        border-color: #999;
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        padding: 13px 22%;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    
+    form .btn-primary:hover {
+        background: #181818;
+        border-color:#181818;
+    }
+    
+    .postal-addresss {
+        margin-top: 52px
+    }
+}
+
+@media(max-width: 767px){
+    .contact-us {
+         h1 {
+            margin-bottom: 25px;
+         }
+
+        .postal-addresss {
+            margin-top: 35px
+        }
+
+        form .btn-primary {
+            width: 100%;
+        }
+    }
+}
+
+/*** Address details ***/
+.contact-us {
+    .properties {
+        border-top: none; 
+    }
+
+    .address-wrapper {
+        padding: 20px 20px;
+        border-radius: .25rem; 
+        border: 1px solid #ccc;
+        width: 100%;
+        float: left;
+
+        .company {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .contact-logo {
+            height: 20px;
+            width: auto;
+            display: inline-block;
+            margin: 0 0 5px;
+        }
+
+        p.address {
+            margin: 0 0 5px;
+        }
+
+        p.tel {
+            margin: 0;
+            a { 
+                text-decoration: none;
+                color: $bColor;
+
+                &:hover,
+                &:focus {
+                    color: #636b6f;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
+/*** Process Details ***/
+
+.process-details {
+    .process-list {
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+
+        .pb {
+            height: 5px;
+            position: relative;
+            top: 0;
+            background: rgba(215, 198, 182, 0.63);
+            width: 100%;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+        }
+    
+        .pb-active {
+            height: 5px;
+            position: relative;
+            top: -5px;
+            background: #775e53;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+        }
+    
+        .v78 {
+            width: 78%
+        }
+        
+        .v80 {
+            width: 80%
+        }
+        
+        h2 {
+            font: 400 16px/22px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+            letter-spacing: 0;
+            margin-bottom: 5px;
+        }
+        
+        small {
+            color: #7b7373;
+            font: 400 12px/18px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+            letter-spacing: .36px
+        }
+    }
+}

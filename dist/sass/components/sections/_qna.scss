@@ -1,0 +1,56 @@
+.faq {
+    padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .faq {
+        padding-bottom:1rem;
+        background: url("../images/faq.jpg") 125% 18rem no-repeat;
+        background-size: 55%;
+    }
+}
+
+@media (min-width: 992px) {
+    .faq {
+        background:url("../images/faq.jpg") 125% 16rem no-repeat;
+        background-size: 55%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .faq {
+        padding-bottom:3rem;
+        background: url("../images/faq.jpg") 125% 6rem no-repeat;
+        background-size: 55%;
+    }
+}
+
+.faq {
+    .tile {
+        margin-bottom: 3rem;
+
+        a {
+            color: $bColor;
+
+            &:hover,
+            &:focus {
+                color: #000;
+            }
+        }
+    }
+
+    .tile p {
+        color: #000;
+        line-height: 2;
+        margin-bottom: 0;
+    }
+    
+    h2,
+    h3 {
+        text-transform: none;
+        color: #0f4555;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+

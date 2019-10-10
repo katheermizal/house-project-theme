@@ -1,0 +1,190 @@
+section.request-form {
+    padding: 0;
+    background-color: #eee;
+}
+
+.request-form {
+    .bar-rfq {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .bar-rfq input {
+        margin-bottom: 10px;
+    }
+    .bar-rfq input::-webkit-input-placeholder {
+        color: #b5b5b5;
+        font-family: San Francisco,Helvetica,sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        opacity: 1;
+        text-align: left
+    }
+
+    .bar-rfq input:-moz-placeholder,
+    .bar-rfq input::-moz-placeholder {
+        color: #b5b5b5;
+        font-family: San Francisco,Helvetica,sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        opacity: 1;
+        text-align: left
+    }
+
+    .bar-rfq input:-ms-input-placeholder {
+        color: #b5b5b5;
+        font-family: San Francisco,Helvetica,sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        opacity: 1;
+        text-align: left
+    }
+
+    .bar-rfq .btn-primary {
+        background: #03b5c3;
+        border-color: #03b5c3;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 14px 0;
+        cursor: pointer;
+        margin-bottom: 10px;  
+        text-transform: uppercase;
+    }
+
+    .bar-rfq .btn-primary:hover {
+        background-color: #4aadb5;
+        border-color: #4aadb5; 
+    }
+
+    .bar-rfq .form-control-lg,
+    .bar-rfq .input-group-lg>.form-control,
+    .bar-rfq .input-group-lg>.input-group-addon,
+    .bar-rfq .input-group-lg>.input-group-btn>.btn {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 14px 20px;
+    }
+
+    /*** image uploader ***/
+
+    .btn-secondary {
+        margin-bottom: 10px; 
+        background: #fff;
+        border-color: #03b5c3;
+        border: 2px solid #03b5c3;
+        color: #03b5c3;
+        padding-top: 13px !important;
+        padding-bottom: 13px !important;
+        cursor: pointer;
+    
+        &:after {
+            content: '+';
+            margin-left: 2px;
+        }
+    
+        &.active { 
+            &:after {
+                content: '-'; 
+            }
+        }
+        
+        &:hover,
+        &:focus {
+            background-color: #4aadb5;
+            border-color: #4aadb5;  
+            color: #fff;
+        }
+    }
+
+    .image-uploader-popup {
+        position: relative;
+        margin-bottom: 10px;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .image-popup-wrapper {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        padding: 15px 15px 10px;
+
+        .images > div {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .request-form {
+        .bar-rfq {
+            padding-top: 15px;
+            padding-bottom: 5px;
+        }
+
+        .bar-rfq input::-webkit-input-placeholder {
+            font-size: 14px
+        }
+
+        .bar-rfq input:-moz-placeholder,
+        .bar-rfq input::-moz-placeholder {
+            font-size: 14px
+        }
+
+        .bar-rfq input:-ms-input-placeholder {
+            font-size: 14px
+        }
+
+        .bar-rfq .fake-placeholder {
+            font-size: 14px;
+            line-height: 19px
+        }
+
+        .bar-rfq .btn-primary {
+            font-size: 14px;
+        }
+
+        .bar-rfq .form-control-lg,
+        .bar-rfq .input-group-lg>.form-control,
+        .bar-rfq .input-group-lg>.input-group-addon,
+        .bar-rfq .input-group-lg>.input-group-btn>.btn {
+            font-size: 14px;
+            padding: 14px 20px
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .request-form {
+        .bar-rfq input::-webkit-input-placeholder {
+            font-size:14px
+        }
+
+        .bar-rfq input:-moz-placeholder,
+        .bar-rfq input::-moz-placeholder {
+            font-size: 14px
+        }
+
+        .bar-rfq input:-ms-input-placeholder {
+            font-size: 16px
+        }
+
+        .bar-rfq .fake-placeholder {
+            font-size: 14px;
+            line-height: 22px
+        }
+
+        .bar-rfq .btn-primary {
+            font-size: 14px;
+            line-height: 20px
+        }
+
+        .bar-rfq .form-control-lg,
+        .bar-rfq .input-group-lg>.form-control,
+        .bar-rfq .input-group-lg>.input-group-addon,
+        .bar-rfq .input-group-lg>.input-group-btn>.btn {
+            font-size: 14px;
+            padding: 14px 20px
+        }
+    }
+} 

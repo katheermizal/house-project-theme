@@ -1,0 +1,61 @@
+
+.above-footer {
+    position: relative;
+
+    &:before {
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute; 
+        background-color: #001438;
+        opacity: 0.6;
+        z-index: 1;
+    }
+
+    .container {
+        z-index: 2;
+        position: relative;
+    }
+
+    h2 {
+        color: #fff;
+        font: 400 30.61px/36px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        margin-bottom: 18px
+    }
+    
+    p {
+        color: #fff;
+        font: 400 16px/24px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif
+    }
+    
+    .btn-primary {
+        color: $white;
+        background: #03b5c3;
+        border-color: #03b5c3; 
+        font: 400 14.21px/17px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        width: 100%;
+        padding-top: 13.5px;
+        padding-bottom: 13.5px;
+        margin-top: 24px
+    }
+    
+    .btn-primary:hover {
+        background-color: #4aadb5;
+        border-color: #4aadb5
+    }
+}
+
+@media(max-width: 767px){
+    section.above-footer {
+        padding-bottom: 3em;
+        text-align: center;
+    }
+
+    .above-footer .btn-primary {
+        margin-top: 0;
+    }
+}

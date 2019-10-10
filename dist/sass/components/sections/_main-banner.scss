@@ -1,0 +1,355 @@
+.banner {
+    background: #95bce4;
+    padding-top: 10rem;
+    position: relative;
+    
+
+    &:before {
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute; 
+        background-color: #001438;
+        opacity: 0.6;
+        z-index: 1;
+    }
+
+    .container,
+    .title {
+        z-index: 2;
+        position: relative;
+    }
+
+    h1 {
+        color: $white;
+        margin-bottom: 7.5vh;
+        font: 60px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    }
+
+    h1,
+    h2,
+    p {
+        color: $white;
+    }
+
+    .btn {
+        color: $white;
+    }
+
+    .headline {
+        color: $white;
+        font-weight: 400;
+        font-size: calc(1.5rem + 1vw);
+        margin-bottom: 0.75rem;
+    }
+
+    .subheadline {
+        color: $white;
+        font-weight: 400;
+        font-size: calc(1rem + 1vw);
+        margin-bottom: 1rem;
+    }
+} 
+
+@media (min-width: 768px) {
+    .banner {
+        background-size: cover !important;
+        h1 {
+            margin-bottom: 1em;
+            font: 60px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        }
+
+        .headline {
+            font-size:calc(1.6rem + 3vh);
+        }
+
+        .subheadline {
+            font-size:calc(.85rem + 1vh)
+        }
+    } 
+}
+
+/*** Main Banner ***/
+.banner__main {
+    top: 0;
+    height: calc(100vh - 76px); 
+    min-height: 300px;
+    width: 100%;
+    background-color: #95bce4;
+    background-size: cover;
+    padding-top: 5rem;
+
+    .title {
+        margin-bottom: 2vh;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .banner__main .title {
+        margin-top:6vh;
+        margin-bottom: 6vh;
+    }
+}
+
+@media (min-width: 768px) and (min-height:640px) {
+    .banner__main .title {
+        margin-top:10vh;
+    }
+}
+
+@media (min-width: 768px) and (min-height:800px) {
+    .banner__main .title {
+        margin-top:16vh;
+    }
+}
+
+
+@media(max-width: 767px) {
+    .banner__main {
+        padding-top: 3.3rem;
+        height: auto;
+    }
+}
+
+.banner__main {
+    a.more-animation {
+        display: block;
+        position: relative;
+        bottom: 0;
+        text-align: center;
+        background-image: url("./images/arrow-down.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 16px 21px;
+        opacity: .8;
+        min-height: 40px;
+    }
+
+    .btn-how {
+        color: #fff;
+        background: #03b5c3;
+        border-color: #03b5c3;
+        font: 400 14.21px/17px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 13.5px 30px; 
+    }
+}
+
+@media (min-width: 768px) {
+    .banner__main .btn-how {
+        margin:6vh auto;
+    }
+}
+
+.banner__main {
+    .btn-how:hover {
+        background-color: #4aadb5;
+        border-color: #4aadb5;  
+    }
+
+    .btn-how:active,
+    .ntn-how:focus {
+        background: #03b5c3;
+        border-color: #03b5c3;
+    }
+}
+
+/*** Mouse Wheel Animation ***/
+.banner {
+    .animation-mouse {
+        display: none;
+        position: absolute;
+        left: 50%;
+        bottom: 25px;
+        width: 66px;
+        margin: 0 0 -2px -33px;
+        z-index: 20;
+        cursor: pointer;
+        text-align: center;
+        -webkit-transition: opacity .2s;
+        transition: opacity .2s;
+    }
+}
+
+@media (min-width: 768px) and (min-height:520px) {
+    .banner .animation-mouse {
+        display:block;
+    }
+}
+
+.banner {
+    .animation-mouse:hover {
+        opacity: .7;
+    }
+
+    .animation-mouse.hidden {
+        cursor: default;
+    }
+
+    .animation-mouse.hidden svg {
+        opacity: 0;
+        -webkit-transition-delay: .3s;
+        transition-delay: .3s;
+    }
+
+    .animation-mouse.hidden svg path {
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+        -webkit-transition-duration: .8s;
+        transition-duration: .8s;
+        stroke-dasharray: 0,109;
+        stroke-dashoffset: 109;
+    }
+
+    .animation-mouse svg {
+        height: calc(1.5rem + 5vh);
+        -webkit-transition: opacity .4s ease-in-out .9s;
+        transition: opacity .4s ease-in-out .9s;
+    }
+
+    .animation-mouse svg path {
+        fill: hsla(0,0%,100%,0);
+        stroke: $white;
+        stroke-dasharray: 51,0;
+        stroke-dashoffset: 109;
+        -webkit-transition: stroke-dasharray 1.3s cubic-bezier(.74,.05,.12,.99) .9s;
+        transition: stroke-dasharray 1.3s cubic-bezier(.74,.05,.12,.99) .9s;
+    }
+
+    .animation-mouse svg circle {
+        fill: $white;
+        -webkit-animation: animation-mouse-mouse-circle ease-in-out 1.9s infinite;
+        animation: animation-mouse-mouse-circle ease-in-out 1.9s infinite;
+    }
+}
+
+@-webkit-keyframes animation-mouse-mouse-circle {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    to {
+        -webkit-transform: translateY(12px);
+        transform: translateY(12px);
+        opacity: 0;
+    }
+}
+
+@keyframes animation-mouse-mouse-circle {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    to {
+        -webkit-transform: translateY(12px);
+        transform: translateY(12px);
+        opacity: 0;
+    }
+}
+
+
+/**** Inner Banner ****/
+
+.banner__inner {
+    [v-cloak] {
+        display: none
+    }
+
+    .bar-rfq {
+        margin-top: 186px
+    }
+
+    h1 {
+        color: $white;
+        margin-bottom: 7.5vh;
+        font: 46.5px/72px San Francisco;
+    }
+}
+
+@media (min-width: 768px) {
+    .banner__inner h1 {
+        margin-bottom:70px;
+        font: 46.5px/72px San Francisco;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner__inner {
+        background-size: 100% 100%;
+    }
+}
+
+.banner__inner {
+    padding: 4rem 0;
+    background-attachment: fixed !important; 
+
+    h1 {
+        font: 32px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    }
+}
+
+
+@media(min-width: 768px){ 
+    .banner__inner {
+        padding: 6rem 0; 
+        h1 {
+            font: 60px San Francisco,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        }
+    }
+}
+
+/*** Inner banner short ***/
+
+.banner__inner--short {
+    padding: 2rem 0; 
+}
+
+@media(min-width: 768px) {
+    .banner__inner--short {
+        padding: 3rem 0; 
+    }   
+}
+
+/*** Inner banner Houses detail ***/
+
+.banner__inner--product {
+    .banner__details {
+        p {
+            margin: 0;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.65);
+            color: #000;
+            border-radius: 5px;
+            display: inline-block; 
+        }
+    }
+}
