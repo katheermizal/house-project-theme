@@ -9,5 +9,3 @@ Responsive HTML5-Bootstrap theme for property selling business
 * jQuery/JavaScript
 * Scroll-reveal Js
 
-## Preview
-![](screen-capture.gif)
