@@ -1,5 +1,5 @@
 # house-project
-Responsive HTML5 Theme For Real Estate
+Responsive HTML5-Bootstrap theme for property selling business
 
 ## Used technologies
 * Bootstrap
